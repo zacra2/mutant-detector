@@ -32,14 +32,6 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    // Dependencia de Spring Context
-    implementation 'org.springframework:spring-context:5.3.10' // Usa la última versión
-
-    // Dependencia de Spring Core
-    implementation 'org.springframework:spring-core:5.3.10' // Usa la última versión
-
-    // Dependencia de Spring Beans
-    implementation 'org.springframework:spring-beans:5.3.10' // Usa la última versión
 }
 
 tasks.named('test') {

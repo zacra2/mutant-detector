@@ -1,0 +1,6 @@
+
+DROP TABLE IF EXISTS Dna;
+CREATE TABLE Dna (
+    sequence VARCHAR(255) PRIMARY KEY,
+    isMutant BOOLEAN
+);
