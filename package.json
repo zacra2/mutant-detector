@@ -1,0 +1,19 @@
+{
+    "name": "my-app",
+    "version": "1.0.0",
+    "engines": {
+      "node": "18.x"
+    },
+    "scripts": {
+      "start": "node index.js",
+      "build": "npm run build"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "dotenv": "^8.2.0"
+    },
+    "devDependencies": {
+      "eslint": "^7.12.1",
+      "nodemon": "^2.0.6"
+    }
+  }

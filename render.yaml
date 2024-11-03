@@ -1,13 +1,11 @@
 services:
   - type: web
-    name: my-app
+    name: my-service
     env: node
-    region: us-central
-    branch: main
-    buildCommand: "npm install"
-    startCommand: "npm start"
-    envVars:
-      - key: NODE_ENV
-        value: production
-      - key: NODE_VERSION
-        value: "18"
+    buildCommand: |
+      # Instalar Java 17 usando Chocolatey
+      choco install -y openjdk --version=17.0.12
+      # Configurar JAVA_HOME
+      export JAVA_HOME=$(dirname $(dirname $(which java)))
+      ./gradlew build
+    startCommand: npm start
